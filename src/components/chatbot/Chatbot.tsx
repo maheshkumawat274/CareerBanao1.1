@@ -273,7 +273,7 @@ const Chatbot: React.FC = () => {
         <div className="fixed bottom-16 right-20 bg-white border border-gray-300 shadow-lg rounded-lg p-4 flex items-center gap-1 smLgap-3 z-50 animate-bounce-in font-poppins">
           <div className="relative w-12 h-12">
             <img
-              src="./logo/Default_WHO_Introduces_AI_Chatbot_SARAH_Despite_Flaws_0.webp"
+              src="./logo/1_lyyXmbeoK5JiIBNCnzzjjg.png "
               alt="Niaa Avatar"
               className="w-full h-full rounded-full border-2 border-primaryBtn"
             />
@@ -297,7 +297,7 @@ const Chatbot: React.FC = () => {
       >
         <div className="relative">
           <img
-            src="./logo/Default_WHO_Introduces_AI_Chatbot_SARAH_Despite_Flaws_0.webp"
+            src="./logo/1_lyyXmbeoK5JiIBNCnzzjjg.png"
             className="rounded-full w-11 h-11 border-2 border-white"
           />
           <span className="absolute top-0 left-0 h-4 w-4 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">

@@ -32,7 +32,8 @@ function CurrentOpening() {
             you're interested to work with us, just send across your resume to us.
           </p>
         </div>
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex justify-center">
+      <div className="flex flex-wrap gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
       {/* ---------------- when needen it will we uncommented ---------------- */}
       {/* <div className="search-container flex w-full justify-center gap-1 lg:gap-3 items-center">
         <Input
@@ -63,6 +64,7 @@ function CurrentOpening() {
       }
 
     </div>
+      </div>
    </div>
   );
 }

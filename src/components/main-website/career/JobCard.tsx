@@ -39,7 +39,7 @@ import { Link } from "react-router-dom";
 const JobCard = ({ data }: any) => {
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 p-6">
+    <div className="gap-6 p-6">
         <div
           className="bg-white shadow-lg rounded-lg p-6 w-80 transform transition-transform hover:scale-105 hover:shadow-2xl"
         >
