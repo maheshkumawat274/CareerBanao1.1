@@ -1,9 +1,9 @@
 import React from 'react';
 const TopContent: React.FC = () => {
   return (
-    <div className="relative overflow-hidden h-[300px] sm:h-[400px]">
+    <div className="relative overflow-hidden h-[300px] sm:h-[450px]">
       {/* Background img */}
-      <img className='w-full h-[300px] sm:h-[400px]' src='./logo/WWT-34-hands-laptop.jpg'/>
+      <img className='w-full h-[300px] sm:h-[450px]' src='./logo/WWT-34-hands-laptop.jpg'/>
 
       {/* Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-8"></div>

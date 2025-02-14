@@ -142,7 +142,7 @@ const CollegeCards: React.FC = () => {
       <Slider {...settings} className="mx-4">
         {colleges.map((college) => (
           <div key={college.id} className="px-2 pt-5 pb-5">
-            <div className="bg-white h-[50vh] shadow-lg rounded-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl">
+            <div className="bg-white h-[55vh] shadow-lg rounded-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl">
               <div className="relative">
                 <img src={college.image} alt={`${college.name} Campus`} className="w-full h-40 object-cover" />
                 <img src={college.logo} alt={`${college.name} Logo`} className="absolute top-3 left-3 w-12 h-12 rounded-full border-2 border-white shadow-md" />

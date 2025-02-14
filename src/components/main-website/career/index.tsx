@@ -1,3 +1,5 @@
+
+import Loader from "../Loader";
 import "./career.css"
 import CurrentOpening from "./CurrentOpening";
 import Gallery from "./Gallery";
@@ -7,12 +9,16 @@ import WhyJoinUs from "./WhyJoinUs";
 
 const Career = () => {
   return (
-    <div>
+    <>
+     <Loader>
+     <div className="font-poppins">
       <Gallery/>
       <WhyJoinUs/>
       <Heading/>
       <CurrentOpening/>
-    </div>
+     </div>
+     </Loader>
+    </>
   );
 
 };

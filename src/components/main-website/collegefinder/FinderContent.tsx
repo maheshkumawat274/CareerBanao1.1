@@ -1,8 +1,14 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 
 const FinderContent: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/CollegeFinder#collegefind");
+  };
+
   return (
     <section className="w-full">
       <div className="container mx-auto px-4">
@@ -29,8 +35,9 @@ const FinderContent: React.FC = () => {
             <a
               href="#"
               className="text-blue-500 hover:text-blue-700 font-medium"
+              onClick={handleClick}
             >
-              <Link to={'/CollegeFinder'}>Learn More</Link>
+               Learn More
             </a>
           </div>
 
@@ -54,8 +61,9 @@ const FinderContent: React.FC = () => {
             <a
               href="#"
               className="text-blue-500 hover:text-purple-700 font-medium"
+              onClick={handleClick}
             >
-              <Link to={'/CollegeFinder'}>Learn More</Link>
+              Learn More
             </a>
           </div>
         </div>

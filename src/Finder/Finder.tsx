@@ -1,5 +1,5 @@
-import  { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import  { useEffect, useRef, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import FormSubmission from "./FormSubmission";
 import ReffFrnd from "./ReffFrnd";
 import FrndForm from "./FrndForm";
@@ -7,6 +7,8 @@ import Mode from "./Mode";
 import RegularMode from "./RegularMode";
 import EMI from "./EMI";
 import OnlineMode from "./OnlineMode";
+
+
 
 interface StackItem {
   value: any;
@@ -46,6 +48,19 @@ class Stack {
 
 
 function Finder() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   const back_stack = useRef(new Stack());
    
   
@@ -499,7 +514,7 @@ function Form_sub(jsonD: string) {
      </div>
     </div>
 
-    <div className={LevelEdu === "f" ? "hidden" : "block"}>
+    <div className={LevelEdu === "f" ? "hidden" : "block"} id="collegefind">
       <div className="compo bg-[#EDEDE9] font-poppins p-10 flex flex-col items-center justify-center">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
           Pick Your Level Of Education
